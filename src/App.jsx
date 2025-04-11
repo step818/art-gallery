@@ -1,5 +1,6 @@
 import "./App.css";
 
+import Login from "./components/Login";
 import reactLogo from "./assets/react.svg";
 import { useState } from "react";
 import viteLogo from "/vite.svg";
@@ -14,6 +15,7 @@ function App() {
           🎉 Tailwind CSS is working!
         </h1>
       </div>
+      <Login />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
