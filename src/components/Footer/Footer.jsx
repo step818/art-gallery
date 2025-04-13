@@ -7,7 +7,7 @@ const Footer = () => {
         </p>
         <div className="space-x-4 mt-2 sm:mt-0">
           <a
-            href="https://yourwebsite.com"
+            href="https://stephentrewick.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition"
@@ -15,7 +15,7 @@ const Footer = () => {
             Website
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/step818"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition"

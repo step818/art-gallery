@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 const Header = () => {
@@ -8,14 +9,9 @@ const Header = () => {
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <a href="#home" className="hover:text-gray-400">
+              <Link to="/" className="text-sm text-gray-700 hover:underline">
                 Home
-              </a>
-            </li>
-            <li>
-              <a href="#gallery" className="hover:text-gray-400">
-                Gallery
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#about" className="hover:text-gray-400">
@@ -26,6 +22,23 @@ const Header = () => {
               <a href="#contact" className="hover:text-gray-400">
                 Contact
               </a>
+            </li>
+            <li>
+              <Link
+                to="/login"
+                className="text-sm text-gray-700 hover:underline"
+              >
+                Admin Login
+              </Link>
+            </li>
+            <li>
+              {/* Make this a protected route. Only visible if authenticated */}
+              <Link
+                to="/admin"
+                className="text-sm text-gray-700 hover:underline"
+              >
+                Admin Page
+              </Link>
             </li>
           </ul>
         </nav>
